@@ -1,0 +1,9 @@
+{:+ {:app [(:lt.objs.plugins/load-js ["codemirror/elixir.js" "elixir_compiled.js"])]
+     :editor.elixir [:lt.plugins.elixir/elixir-exception :lt.plugins.elixir/on-eval
+                     :lt.plugins.elixir/on-eval.one
+                     :lt.plugins.elixir/elixir-result
+                     :lt.plugins.elixir/elixir-success
+                     :lt.plugins.elixir/elixir-printer
+                     (:lt.objs.editor/tab-settings false 2 2)]
+     :files [(:lt.objs.files/file-types [{:name "Elixir" :exts [:elixir :ex :exs] :mime "text/x-elixir" :tags [:editor.elixir]}])]
+     :elixir.lang [:lt.plugins.elixir/eval! :lt.plugins.elixir/connect]}}
